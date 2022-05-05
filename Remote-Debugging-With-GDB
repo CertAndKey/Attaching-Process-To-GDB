@@ -1,15 +1,14 @@
-INSTURCTIONS FOR REMOTE DEBUGGING ANDROID BINARIES WITH GDB
+INSTURCTIONS FOR REMOTE DEBUGGING WITH GDB
 
 ON LOCAL MACHINE RUN GDB LOCATED IN
 /Android NDK/android-ndk-r21e/prebuilt/linux-x86_64/bin/gdb
 
-ON ANDROID DEVICE WITH GDBSERVER RUNNING RUN
+ON DEVICE WITH GDBSERVER RUNNING RUN
 1. botox to kill process and pause it when it restarts
 2. run "gdbserver64 --attach localIP:port <process_pid>"
 
 IN GDB ON LOCAL MACHINE RUN
 "target remote IPaddressOfDevice:port"
-
 
 GDB COMMANDS
 "info registers" prints registers
