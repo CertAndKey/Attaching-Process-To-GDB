@@ -1,0 +1,21 @@
+#!/bin/sh
+# A shell script replacement for the botox executable. Requires the following tools:
+#
+#      o ps
+#      o grep
+#      0 cut
+#      o kill
+
+ID=$(ps | grep adcservice | grep -v grep | grep -v sh | cut -d ' ' -f 2)
+kill $ID
+
+while [ 1 ]
+do
+  PID=$(ps | grep adcservice | grep -v grep | grep -v sh | cut -d ' ' -f 2)
+	if [ "$PID" != "" ] && [ "$ID" != "$PID" ]
+	then
+		kill -STOP $PID
+		echo "PID: $PID"
+		break
+	fi
+done
