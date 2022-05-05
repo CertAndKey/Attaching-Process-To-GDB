@@ -4,7 +4,7 @@ ON LOCAL MACHINE RUN GDB LOCATED IN
 /Android NDK/android-ndk-r21e/prebuilt/linux-x86_64/bin/gdb
 
 ON DEVICE WITH GDBSERVER RUNNING RUN
-1. botox to kill process and pause it when it restarts
+1. pause_process.sh to kill process and pause it when it restarts
 2. run "gdbserver64 --attach localIP:port <process_pid>"
 
 IN GDB ON LOCAL MACHINE RUN
