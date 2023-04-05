@@ -13,6 +13,8 @@ IN GDB ON LOCAL MACHINE RUN
 GDB COMMANDS
 "info registers"            prints registers
 "x/100x $sp"                prints stack
+"x/100x $pc"                prints program counter
 "layout asm"                switch to assembly layout
+"layout regs"               show registers layout
 "set architecture <arch>"   set architecture if using gdb multiarch
 "si"                        run next instruction
