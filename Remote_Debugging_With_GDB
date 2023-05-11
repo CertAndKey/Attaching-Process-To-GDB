@@ -2,6 +2,8 @@ INSTURCTIONS FOR REMOTE DEBUGGING WITH GDB
 
 ON LOCAL MACHINE RUN GDB LOCATED IN
 /Android NDK/android-ndk-r21e/prebuilt/linux-x86_64/bin/gdb
+# alternatively run "gdb-multiarch"
+# run "set architecture <architecture>" to select what architecture gdb-multiarch will use 
 
 ON DEVICE WITH GDBSERVER RUNNING RUN
 1. pause_process.sh to kill process and pause it when it restarts
