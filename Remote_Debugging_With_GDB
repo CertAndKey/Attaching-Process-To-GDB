@@ -20,3 +20,4 @@ GDB COMMANDS
 "layout regs"               show registers layout
 "set architecture <arch>"   set architecture if using gdb multiarch
 "si"                        run next instruction
+"break <function name>"     will break when function is called
