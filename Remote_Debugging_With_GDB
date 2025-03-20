@@ -21,3 +21,5 @@ GDB COMMANDS
 "set architecture <arch>"   set architecture if using gdb multiarch
 "si"                        run next instruction
 "break <function name>"     will break when function is called
+"info break"                show breakpoints
+"del <number>"              deletes breakpoint number specified
